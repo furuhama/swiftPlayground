@@ -100,3 +100,12 @@ print(pochi.name)
 var dame_nyanko = DameNyanko(name: "dame")
 print(dame_nyanko.meow())
 print(dame_nyanko.name)
+
+struct Anko {
+    var sweetness: Int
+    var umami: Int {
+        return sweetness * sweetness
+    }
+}
+var an = Anko(sweetness: 10)
+print(an.umami)
